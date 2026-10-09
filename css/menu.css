@@ -1,9 +1,3 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 :root {
     --fundo-body: #F4F5F7;          
     --fundo-sessoes: #FFFFFF;      
@@ -85,6 +79,9 @@ header .links nav ul li a {
     text-decoration: none;
     font-weight: 500;
     transition: 0.5s ; 
+    display: inline-block;
+    font-size: 20px;
+    line-height: 100px;
 }
 
 header .links nav ul li a:hover {
