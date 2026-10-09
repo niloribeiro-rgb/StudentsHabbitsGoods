@@ -1,10 +1,35 @@
+:root {
+    --fundo-body: #F4F5F7;
+    --fundo-sessoes: #FFFFFF;
+    --bordas: 2px solid #E5E7EB;
+    --titulos: #111827;
+    --textos: #374151;
+    --textos-secundarios: #6B7280;
+    --fundo-button: #2563EB;
+    --texto-botao: #FFFFFF;
+    --hover-botao: #1D4ED8;
+    --links: #3B82F6;
+    --fundo-header: #0c0d10;
+    --texto-header-links: #F9FAFB;
+}
+
 .card{
     width: 100%;
     min-height: 100px;
+    background-color: var(--fundo-sessoes);
+    border-radius: 10px;
+    border: var(--bordas);
     display: flex;
+    gap: 10px;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    transition: 0.4s;
+    padding: 10px;
+}
+
+.card:hover{
+    transform: translateY(-3px);
 }
 
 .card .Campo-Imagem{
@@ -15,6 +40,53 @@
     height: 30%;
 }
 
+.card .Campo-Imagem img{
+    width: 150px;
+    padding: 10px;
+    height: auto;
+    object-fit: cover;
+    border: none;
+}
+
 .card .tituloCard{
-    
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.card .tituloCard h2{
+    color: var(--titulos);
+}
+
+.card .informacoesCard{
+   width: 100%;
+   display: flex;
+   flex-direction: column;
+   gap: 20px;
+   justify-content: flex-start;
+   text-align: left;
+}
+
+.card .informacoesCard p{
+    font-size: 15px;
+    line-height: 1.5;
+    color: var(--textos);
+}
+
+.card .informacoesCard span{
+    color: var(--textos-secundarios);
+    font-size: 13px;
+}
+
+@media(max-width: 850px){
+    .card .informacoesCard h2{
+        font-size: 30px;
+    }
+    .card .informacoesCard p{
+        font-size: 18px;
+    }
+    .card .informacoesCard span{
+        font-size: 16px;
+    }
 }
