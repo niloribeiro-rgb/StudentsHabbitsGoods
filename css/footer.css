@@ -1,5 +1,5 @@
 footer {
-    background: #343a40;
+    background: var(--fundo-footer);
     color: #d5d5d5;
     min-height: 200px;
 }
@@ -28,6 +28,7 @@ footer {
     font-size: 1rem;
     font-weight: 400;
     line-height: 1.6;
+    color: var(--textos-footer);
 }
 
 .textoEInfos img {
@@ -46,7 +47,8 @@ footer {
 .linksContainer h6 {
     font-weight: 400;
     font-size: 1rem;
-    font-family: "Poppins", sans-serif;
+    
+    color: var(--titulos-footer);
 }
 
 
@@ -55,10 +57,11 @@ footer {
     color: #d5d5d5;
     text-decoration: none;
     transition: 0.5s;
+    color: var(--textos-footer);
 }
 
 .linksContainer a:hover {
-    color: green;
+    color: var(--hover-footer-links);
 }
 
 
@@ -66,7 +69,7 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    border-top: 1px solid #495057;
+    border-top: 1px solid var(--borda-footer);
     height: 100px;
     display: flex;
 }

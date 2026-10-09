@@ -1,5 +1,27 @@
 @import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap');
 
+
+:root {
+    --fundo-body: #F4F5F7;
+    --fundo-sessoes: #FFFFFF;
+    --bordas: 2px solid #E5E7EB;
+    --titulos: #111827;
+    --textos: #374151;
+    --textos-secundarios: #6B7280;
+    --fundo-button: #2563EB;
+    --texto-botao: #FFFFFF;
+    --hover-botao: #1D4ED8;
+    --links: #3B82F6;
+    --fundo-header: #0c0d10;
+    --texto-header-links: #F9FAFB;
+
+    --fundo-footer: #111827;
+    --borda-footer: #1F2937;
+    --titulos-footer: #FFFFFF;
+    --textos-footer: #9CA3AF;
+    --hover-footer-links: #3B82F6;
+}
+
 * {
     font-family: "Pixelify Sans", sans-serif;
     margin: 0;
