@@ -6,3 +6,18 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+body {
+    background-color: var(--fundo-body);
+    min-height: 100vh;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: var(--textos);
+}
+
+main {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
