@@ -2,6 +2,7 @@
     --fundo-body: #F4F5F7;
     --fundo-sessoes: #FFFFFF;
     --bordas: 2px solid #E5E7EB;
+    --borda-hover: 2px solid rgb(36, 96, 177);
     --titulos: #111827;
     --textos: #374151;
     --textos-secundarios: #6B7280;
@@ -13,7 +14,7 @@
     --texto-header-links: #F9FAFB;
 }
 
-.card{
+.card {
     width: 100%;
     min-height: 100px;
     background-color: var(--fundo-sessoes);
@@ -28,11 +29,12 @@
     padding: 10px;
 }
 
-.card:hover{
+.card:hover {
     transform: translateY(-3px);
+    border: var(--borda-hover);
 }
 
-.card .Campo-Imagem{
+.card .Campo-Imagem {
     width: 100%;
     display: flex;
     justify-content: center;
@@ -40,7 +42,7 @@
     height: 30%;
 }
 
-.card .Campo-Imagem img{
+.card .Campo-Imagem img {
     width: 150px;
     padding: 10px;
     height: auto;
@@ -48,45 +50,47 @@
     border: none;
 }
 
-.card .tituloCard{
+.card .tituloCard {
     width: 100%;
     display: flex;
     justify-content: flex-start;
     align-items: center;
 }
 
-.card .tituloCard h2{
+.card .tituloCard h2 {
     color: var(--titulos);
 }
 
-.card .informacoesCard{
-   width: 100%;
-   display: flex;
-   flex-direction: column;
-   gap: 20px;
-   justify-content: flex-start;
-   text-align: left;
+.card .informacoesCard {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: flex-start;
+    text-align: left;
 }
 
-.card .informacoesCard p{
+.card .informacoesCard p {
     font-size: 15px;
     line-height: 1.5;
     color: var(--textos);
 }
 
-.card .informacoesCard span{
+.card .informacoesCard span {
     color: var(--textos-secundarios);
     font-size: 13px;
 }
 
-@media(max-width: 850px){
-    .card .informacoesCard h2{
+@media(max-width: 850px) {
+    .card .informacoesCard h2 {
         font-size: 30px;
     }
-    .card .informacoesCard p{
+
+    .card .informacoesCard p {
         font-size: 18px;
     }
-    .card .informacoesCard span{
+
+    .card .informacoesCard span {
         font-size: 16px;
     }
 }

@@ -24,6 +24,7 @@ main {
     --fundo-body: #F4F5F7;          
     --fundo-sessoes: #FFFFFF;      
     --bordas: 2px solid #E5E7EB;   
+    --borda-hover: 2px solid rgb(35, 96, 177);
     --titulos: #111827;            
     --textos: #374151;              
     --textos-secundarios: #6B7280;  
@@ -57,6 +58,37 @@ main {
 .Sessao .titulo h1{
     color: var(--titulos);
     font-size: 40px;
+}
+
+.Sessao .SessaoInformacoes{
+    width: 100%;
+    min-height: 100px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+   
+    justify-content: flex-start;
+    gap: 50px;
+}
+.Sessao .SessaoInformacoes h2{
+    color: var(--titulos);
+    font-size: 33px;
+}
+.Sessao .SessaoInformacoes h3{
+    color: var(--titulos);
+}
+
+.Sessao .SessaoInformacoes .textos{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 20px;
+}
+.Sessao .SessaoInformacoes .textos p{
+    color: var(--textos);
+    line-height: 1.5;
+    font-size: 18px;
 }
 
 .Sessao .informacao{
@@ -95,8 +127,46 @@ main {
 }
 .Sessao .cards img:hover{
  transform: translateY(-2px);
- border: 2px solid rgb(35, 96, 177);
+ border: var(--borda-hover);
  transform: rotate(1.5deg);
+}
+
+.SessaoApenasColuna{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    text-align: center;
+}
+.SessaoApenasColuna p{
+    color: var(--textos);
+    font-size: large;
+    animation: animandoParagrafo 0.3s;
+}
+
+@keyframes animandoParagrafo{
+   0%{
+    transform: translateY(-10px);
+   }
+}
+
+.SessaoApenasColuna button{
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    height: 40px;
+    font-size: large;
+    border-radius: 7px;
+    background-color: var(--fundo-button);
+    color: var(--texto-botao);
+    transition: 0.4s;
+    cursor: pointer;
+    border: var(--bordas);
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.397);
+}
+
+.SessaoApenasColuna button:hover{
+    transform: translateY(-2px);
 }
 
 @media(max-width: 850px){
