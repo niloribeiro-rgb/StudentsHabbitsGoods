@@ -20,23 +20,24 @@ main {
     flex-direction: column;
     gap: 16px;
 }
+
 :root {
-    --fundo-body: #F4F5F7;          
-    --fundo-sessoes: #FFFFFF;      
-    --bordas: 2px solid #E5E7EB;   
+    --fundo-body: #F4F5F7;
+    --fundo-sessoes: #FFFFFF;
+    --bordas: 2px solid #E5E7EB;
     --borda-hover: 2px solid rgb(35, 96, 177);
-    --titulos: #111827;            
-    --textos: #374151;              
-    --textos-secundarios: #6B7280;  
+    --titulos: #111827;
+    --textos: #374151;
+    --textos-secundarios: #6B7280;
     --fundo-button: #2563EB;
     --texto-botao: #FFFFFF;
     --hover-botao: #1D4ED8;
-    --links: #3B82F6;               
-    --fundo-header: #0c0d10;        
-    --texto-header-links: #F9FAFB;  
+    --links: #3B82F6;
+    --fundo-header: #0c0d10;
+    --texto-header-links: #F9FAFB;
 }
 
-.Sessao{
+.Sessao {
     width: 100%;
     min-height: 100px;
     padding: 20px;
@@ -47,7 +48,7 @@ main {
     flex-direction: column;
 }
 
-.Sessao .titulo{
+.Sessao .titulo {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -55,43 +56,46 @@ main {
     padding: 5px;
 }
 
-.Sessao .titulo h1{
+.Sessao .titulo h1 {
     color: var(--titulos);
     font-size: 40px;
 }
 
-.Sessao .SessaoInformacoes{
+.Sessao .SessaoInformacoes {
     width: 100%;
     min-height: 100px;
     padding: 20px;
     display: flex;
     flex-direction: column;
-   
+
     justify-content: flex-start;
     gap: 50px;
 }
-.Sessao .SessaoInformacoes h2{
+
+.Sessao .SessaoInformacoes h2 {
     color: var(--titulos);
     font-size: 33px;
 }
-.Sessao .SessaoInformacoes h3{
+
+.Sessao .SessaoInformacoes h3 {
     color: var(--titulos);
 }
 
-.Sessao .SessaoInformacoes .textos{
+.Sessao .SessaoInformacoes .textos {
     width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     gap: 20px;
 }
-.Sessao .SessaoInformacoes .textos p{
+
+.Sessao .SessaoInformacoes .textos p {
     color: var(--textos);
     line-height: 1.5;
     font-size: 18px;
 }
 
-.Sessao .informacao{
+.Sessao .informacao {
     display: flex;
     justify-content: flex-start;
     flex-direction: column;
@@ -100,7 +104,7 @@ main {
     padding: 5px;
 }
 
-.Sessao .informacao p{
+.Sessao .informacao p {
     line-height: 1.5;
     font-size: 22px;
     color: var(--textos);
@@ -113,7 +117,7 @@ main {
     display: grid;
     align-items: center;
     justify-content: center;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); 
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
     gap: 20px;
 }
 
@@ -122,35 +126,37 @@ main {
     height: auto;
     border-radius: 20px;
     border: var(--bordas);
-    object-fit: cover; 
+    object-fit: cover;
     transition: 0.4s;
 }
-.Sessao .cards img:hover{
- transform: translateY(-2px);
- border: var(--borda-hover);
- transform: rotate(1.5deg);
+
+.Sessao .cards img:hover {
+    transform: translateY(-2px);
+    border: var(--borda-hover);
+    transform: rotate(1.5deg);
 }
 
-.SessaoApenasColuna{
+.SessaoApenasColuna {
     width: 90%;
     display: flex;
     flex-direction: column;
     gap: 30px;
     text-align: center;
 }
-.SessaoApenasColuna p{
+
+.SessaoApenasColuna p {
     color: var(--textos);
     font-size: large;
     animation: animandoParagrafo 0.3s;
 }
 
-@keyframes animandoParagrafo{
-   0%{
-    transform: translateY(-10px);
-   }
+@keyframes animandoParagrafo {
+    0% {
+        transform: translateY(-10px);
+    }
 }
 
-.SessaoApenasColuna button{
+.SessaoApenasColuna button {
     width: 60%;
     margin-left: auto;
     margin-right: auto;
@@ -165,18 +171,21 @@ main {
     box-shadow: 0 0 4px rgba(0, 0, 0, 0.397);
 }
 
-.SessaoApenasColuna button:hover{
+.SessaoApenasColuna button:hover {
     transform: translateY(-2px);
+    background-color: var(--hover-botao);
 }
 
-@media(max-width: 850px){
-    .Sessao .titulo h1{
+@media(max-width: 850px) {
+    .Sessao .titulo h1 {
         font-size: 27px;
     }
-    .card .informacoesCard p{
+
+    .card .informacoesCard p {
         font-size: 18px;
     }
-    .card .informacoesCard span{
+
+    .card .informacoesCard span {
         font-size: 16px;
     }
 }

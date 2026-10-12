@@ -5,6 +5,7 @@ function linkarCSS() {
     document.head.insertAdjacentHTML('beforeend', '<link rel="stylesheet" href="css/menu.css">')
     document.head.insertAdjacentHTML('beforeend', '<link rel="stylesheet" href="css/footer.css">')
     document.head.insertAdjacentHTML('beforeend', ' <link rel="stylesheet" href="css/card.css">')
+    document.head.insertAdjacentHTML('beforeend', ' <link rel="stylesheet" href="css/jogo.css">')
 }
 
 function linkarScripts(){
