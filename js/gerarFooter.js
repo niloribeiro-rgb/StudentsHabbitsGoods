@@ -3,7 +3,7 @@ const footer = document.querySelector('footer')
 footer.innerHTML = `
      <div class="textoContainer">
             <div class="textoEInfos">
-                <img src="assets/logo.png" alt="logo">
+                <img src="assets/Logo.png" alt="logo">
                 <p>Aprenda a gerenciar o seu tempo como estudante para ter habitos mais saldaveis de uma forma divertida e retro.</p>
             </div>
             <div class="linksContainer">

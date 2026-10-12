@@ -1,5 +1,3 @@
-
-
 header {
     width: 100%;
     height: auto;
@@ -13,7 +11,7 @@ header {
 }
 
 header .logo {
-    width: 10%;
+    width: auto;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -68,9 +66,8 @@ header .links nav ul li a:hover {
     display: none;
     justify-content: end;
     align-items: center;
-    width: 180px;
-    height: var(--headerHeight);
-    
+    width: min-content;
+    height: auto;
 }
 
 header details{
@@ -81,21 +78,26 @@ header summary{
     list-style: none;
 }
 header summary:active{
-    background-color: aliceblue;
+    background-color: rgba(240, 248, 255, 0.356);
 }
 header .conteudo{
-    background-color: rgb(255, 255, 255);
+    background-color: white;
     padding: 10px;
     position: absolute;
     top: 120%;
     right: 0px;
     display: flex;
     flex-direction: column;
-    width: 150px;
+    min-width: 170px;
+    max-width: 300px;
     border-radius: 3px;
     border: 1px solid black;
     box-shadow: 10px 10px 10px rgba(0,0,0,0.1);
     z-index: 10;
+}
+
+header .conteudo a{
+ color: black;
 }
 
 

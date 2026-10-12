@@ -19,9 +19,8 @@ header.innerHTML = `
                 <summary><img src="assets/icons/menuIcon.svg" alt=""></summary>
                 <div class="conteudo">
                     <a href="index.html">Inicio</a>
-                    <a href="html/servicos.html">Serviços</a>
-                    <a href="html/equipe.html">Nossa equipe</a>
-                    <a href="html/solicitar.html">Solicitar</a>
+                    <a href="dicas.html">Dicas</a>
+                    <a href="testeHbito.html">Teste de hábitos</a>
                 </div>
             </details>
         </div>
