@@ -22,6 +22,11 @@
     --hover-footer-links: #3B82F6;
 }
 
+html {
+    /* chamar a div deevagar */
+    scroll-behavior: smooth;
+}
+
 * {
     font-family: "Pixelify Sans", sans-serif;
     margin: 0;
@@ -68,6 +73,12 @@ main {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+}
+
+#dicas {
+    background-color: #E5E7EB;
+    min-height: 400px;
+
 }
 
 .Sessao .titulo {
@@ -182,7 +193,7 @@ main {
     width: 60%;
     margin-left: auto;
     margin-right: auto;
-    height: 40px;
+    min-height: 40px;
     font-size: large;
     border-radius: 7px;
     background-color: var(--fundo-button);

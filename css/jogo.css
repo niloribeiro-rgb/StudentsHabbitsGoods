@@ -21,7 +21,7 @@
 
 .ContainerJogo button {
     width: 60%;
-    height: 40px;
+    min-height: 40px;
     font-size: large;
     border-radius: 7px;
     background-color: var(--fundo-button);
@@ -35,4 +35,16 @@
 .ContainerJogo button:hover {
     transform: translateY(-2px);
     background-color: var(--hover-botao);
+}
+
+@media(max-width:400px) {
+    .ContainerJogo img {
+        width: 100%;
+    }
+}
+
+@media(max-width: 850px) {
+    .ContainerJogo img {
+        width: 80vw;
+    }
 }

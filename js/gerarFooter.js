@@ -16,8 +16,8 @@ footer.innerHTML = `
             <div class="linksContainer">
                 <h6>Links</h6>
                 <a href="index.html">Início</a>
-                <a href="dicas.html">Dicas</a>
-                <a href="testeHbito.html">Teste de hábitos</a>
+               <a href="#dicas">Dicas</a>
+                <a href="html/testeHabitoJogo.html">Teste de hábitos</a>
             </div>
             <div class="linksContainer">
                 <h6>Autores</h6>
