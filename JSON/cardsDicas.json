@@ -1,0 +1,26 @@
+[
+    {
+        "imagem": "assets/cardsImagens/LogoCama.png",
+        "titulo": "Disposição e energia",
+        "dica": "Durma e acorde sempre no mesmo horário para regular o seu relógio biológico. Essa constância otimiza a liberação de hormônios como a melatonina e o cortisol, garantindo um sono profundo e o máximo de disposição e foco durante o dia.",
+        "observacao": "Qualquer horário é bom, o importante é que seu organismo se adapte com ele."
+    },
+    {
+        "imagem": "assets/cardsImagens/LogoMente.png",
+        "titulo": "Engane sua mente",
+        "dica": "Professores que estudam ciência da mente falam que o nosso cérebro nos sabota, por isso ao invés de você pensar que vai demorar muito tempo, pense que vai estudar apenas 5 minutos, assim você consegue dar o primeiro passo e estudar por um período mais longo.",
+        "observacao": "Isso aumenta 80% da chance de você continuar, não é 100% absoluto."
+    },
+    {
+        "imagem": "assets/cardsImagens/Pomodoro.png",
+        "titulo": "Dica de estudo(Mêtodo)",
+        "dica": "Divida o tempo de estudo em blocos de 25 a 50 minutos focados, seguidos por pausas de 5 minutos. O cérebro consome muita glicose e energia durante o esforço mental intenso; essas pausas curtas recarregam os níveis de atenção e evitam a estafa mental.",
+        "observacao": "Cuidado para não enrolar na hora do descanso, evite o celular ao máximo."
+    },
+    {
+        "imagem": "assets/cardsImagens/Relogio.png",
+        "titulo": "Administração de tempo",
+        "dica": "Classifique as tarefas entre urgentes e importantes para focar no essencial, mesmo com poucas horas livres. Identificar o que traz mais resultado permite que estudantes com rotinas sobrecarregadas estudem menos tempo, mas com o dobro de eficiência.",
+        "observacao": "Para quem tem pouco tempo, busque metodos de 30 minutos a 1 hora para estudar com máxima eficiência."
+    }
+]
