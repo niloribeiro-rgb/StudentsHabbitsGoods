@@ -1,0 +1,94 @@
+{
+  "cenas": {
+    "PrimeiraCena": {
+      "situacao": "O despertador toca às 07:00. O sol já está batendo na janela e o dia começou. O que você faz?",
+      "opcoes": [
+        {
+          "texto": "Levantar na hora, arrumar a cama e tomar um bom café.",
+          "status": "Bom",
+          "proximaCena": "SegundaCena",
+          "imagem": "../assets/imagemGame/cena2/EstudanteSeArrumando.jpg",
+          "imagem2": "../assets/imagemGame/cena3/ChegandoBemNaEscola.jpg"
+        },
+        {
+          "texto": "Ficar no celular e perder a hora.",
+          "status": "Paia",
+          "proximaCena": "SegundaCena",
+          "imagem": "../assets/imagemGame/cena2/EstudanteEnrolando.jpg",
+          "imagem2": "../assets/imagemGame/cena3/ChegandoNaEscolaAtrasado.jpg"
+        }
+      ]
+    },
+    "SegundaCena": {
+      "situacao": "A aula está prestes a começar, o que você vai querer fazer durante a aula?",
+      "imagemInicial": "../assets/imagemGame/cena4/ChegandoNaSala.jpg",
+      "opcoes": [
+        {
+          "texto": "Prestar atenção e fazer tudo corretamente para estudar depois em casa.",
+          "status": "Bom",
+          "proximaCena": "TerceiraCena",
+          "imagem": "../assets/imagemGame/cena4/PrestandoAtencaoAula.jpg"
+        },
+        {
+          "texto": "Vai ficar jogando na aula, deixando de pegar assunto e perdendo tôpicos importantes.",
+          "status": "Paia",
+          "proximaCena": "TerceiraCena",
+          "imagem": "../assets/imagemGame/cena4/JogandoNaAula.jpg"
+        }
+      ]
+    },
+    "TerceiraCena": {
+      "imagemInicial": "../assets/imagemGame/cena5/ChegandoEmcasa.jpg",
+      "situacao": "Você chega a sua casa o que você vai fazer ao entrar?",
+      "opcoes": [
+        {
+          "texto": "Começar a arrumar a casa e fazer minhas tarefas e ter meu tempo livre e depois estudar.",
+          "status": "Bom",
+          "proximaCena": "QuartaCena",
+          "imagem": "../assets/imagemGame/cena5/CumprindoTarefas.jpg"
+        },
+
+        {
+          "texto": "Por estar cansado da aula vai ficar na cama sem fazer nenhuma tarefa.",
+          "status": "Paia",
+          "proximaCena": "QuartaCena",
+          "imagem": "../assets/imagemGame/cena5/procrastinandoEstudante.png"
+        }
+      ]
+    },
+    "QuartaCena": {
+      "situacao": "Após tudo isso já é uma boa hora pra estudar, o que você decidirá fazer?",
+      "opcoes": [
+        {
+          "texto": "Irei estudar para que a matéria fique fresca na minha cabeça.",
+          "status": "Bom",
+          "proximaCena": "QuintaCena",
+          "imagem": "../assets/imagemGame/cena6/Estudando.png"
+        },
+        {
+          "texto": "Vai fazer outra coisa além de estudar.",
+          "status": "Paia",
+          "proximaCena": "QuintaCena",
+          "imagem": "../assets/imagemGame/cena6/Selascou.png"
+        }
+      ]
+    },
+    "QuintaCena": {
+      "situacao": "Sua ultima decisão do dia será, dormir tarde ou dormir bem? Qual a sua escolha?",
+      "opcoes": [
+        {
+          "texto": "Deu o horário, vou dormir pois devo acordar cedo e com força para ir a escola amanhã.",
+          "status": "Bom",
+          "proximaCena": false,
+          "imagem": "../assets/imagemGame/cena7/DormindoBem.png"
+        },
+        {
+          "texto": "Dormir tarde e madrugar",
+          "status": "Paia",
+          "proximaCena": false,
+          "imagem": "../assets/imagemGame/cena7/Nemdormiu.png"
+        }
+      ]
+    }
+  }
+}

@@ -1,3 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap');
+
+* {
+    font-family: "Pixelify Sans", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --fundo-body: #F4F5F7;
+    --fundo-sessoes: #FFFFFF;
+    --bordas: 2px solid #E5E7EB;
+    --borda-hover: 2px solid rgb(35, 96, 177);
+    --titulos: #111827;
+    --textos: #374151;
+    --textos-secundarios: #6B7280;
+    --fundo-button: #2563EB;
+    --texto-botao: #FFFFFF;
+    --hover-botao: #1D4ED8;
+    --links: #3B82F6;
+    --fundo-header: #0c0d10;
+    --texto-header-links: #F9FAFB;
+}
+
+body {
+    background-image: url('../assets/imagemGame/fundoGame.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .ContainerJogo {
     width: 100%;
     display: flex;
@@ -19,20 +56,167 @@
     height: auto;
 }
 
-.ContainerJogo button {
+.ContainerJogo a {
     width: 60%;
     height: 40px;
     font-size: large;
     border-radius: 7px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: var(--fundo-button);
     color: var(--texto-botao);
+    text-decoration: none;
     transition: 0.4s;
     cursor: pointer;
     border: var(--bordas);
     box-shadow: 0 0 4px rgba(0, 0, 0, 0.397);
 }
 
-.ContainerJogo button:hover {
+.ContainerJogo a:hover {
     transform: translateY(-2px);
     background-color: var(--hover-botao);
+}
+
+.GameContainer {
+    width: 95%;
+    max-width: 1200px;
+    min-height: 450px;
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    gap: 30px;
+    padding: 25px;
+    box-sizing: border-box;
+    background-color: var(--fundo-sessoes);
+    border: var(--bordas);
+    border-radius: 16px;
+}
+
+.CenaContainer {
+    width: 35%;
+    min-width: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.CenaContainer img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    min-height: 400px;
+    max-height: 500px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 12px;
+    border: var(--bordas);
+}
+
+.ContainerSituacao {
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 25px;
+    padding: 15px 10px;
+    text-align: left;
+}
+
+
+.Enunciado {
+    padding: 20px;
+    background-color: var(--fundo-body);
+    border: var(--bordas);
+    border-radius: 5px;
+}
+
+.Enunciado h3 {
+    margin: 0;
+    color: var(--titulos);
+    font-size: 20px;
+    line-height: 1.5;
+}
+
+
+.containerOpcoes {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+
+.containerOpcoes p {
+    margin: 0;
+    padding: 18px 20px;
+    background-color: var(--fundo-sessoes);
+    color: var(--textos);
+    border: var(--bordas);
+    border-radius: 10px;
+    font-size: 1rem;
+    line-height: 1.6;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.containerOpcoes p:hover {
+    border: var(--borda-hover);
+    transform: translateY(-2px);
+    transform: rotate(1.2deg);
+}
+
+.ContainerResultado{
+    width: 75%;
+    min-height: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+}
+.ConteudoTop{
+    width: 100%;
+    height: 50%;
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+    align-items: center;
+}
+.ConteudoTop .imagemStatusRosto{
+    width: 30%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.ConteudoTop .imagemStatusRosto img{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+.ConteudoTop .textos{
+    width: 70%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 30px;
+}
+.ConteudoTop .textos h1{
+   color: var(--titulos);
+}
+.ConteudoTop .textos p{
+    color: var(--textos);
+}
+
+.ConteudoEmbaixo{
+    width: 100%;
+    height: 50%;
+    justify-content: flex-start ;
+    align-items: center;
+    display: flex;
+}
+.ConteudoEmbaixo img{
+    width: 50%;
+    height: auto;
+    object-fit: cover;
 }
