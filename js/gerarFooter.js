@@ -3,7 +3,7 @@ const footer = document.querySelector('footer')
 footer.innerHTML = `
      <div class="textoContainer">
             <div class="textoEInfos">
-                <img src="assets/logo.png" alt="logo">
+                <img src="assets/Logo.png" alt="logo">
                 <p>Aprenda a gerenciar o seu tempo como estudante para ter habitos mais saldaveis de uma forma divertida e retro.</p>
             </div>
             <div class="linksContainer">
@@ -16,8 +16,8 @@ footer.innerHTML = `
             <div class="linksContainer">
                 <h6>Links</h6>
                 <a href="index.html">Início</a>
-                <a href="dicas.html">Dicas</a>
-                <a href="testeHbito.html">Teste de hábitos</a>
+               <a href="#dicas">Dicas</a>
+                <a href="html/testeHabitoJogo.html">Teste de hábitos</a>
             </div>
             <div class="linksContainer">
                 <h6>Autores</h6>

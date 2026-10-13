@@ -21,3 +21,7 @@ function linkarScripts(){
 
 linkarCSS()
 linkarScripts()
+
+function abrirJogo(){
+    window.location.href = "html/testeHabitoJogo.html"
+}
